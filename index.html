@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Tic Tac Toe</h1>
+
+    <div class="game-setup">
+        <div class="mode-selection">
+            <h3>Select Game Mode:</h3>
+            <select id="game-mode">
+                <option value="pvp">Player vs Player</option>
+                <option value="pve">Player vs Computer</option>
+            </select>
+        </div>
+
+        <div class="player-setup">
+            <div class="player-input">
+                <label for="player1-name">Player X Name:</label>
+                <input type="text" id="player1-name" placeholder="Enter name for Player X">
+            </div>
+            <div class="player-input">
+                <label for="player2-name">Player O Name:</label>
+                <input type="text" id="player2-name" placeholder="Enter name for Player O">
+            </div>
+            <button id="start-game">Start Game</button>
+        </div>
+    </div>
+
+    <div class="player-info">
+        <div class="player" id="player-x">
+            <h3>Player X</h3>
+        </div>
+        <div class="player" id="player-o">
+            <h3>Player O</h3>
+        </div>
+    </div>
+
+    <div id="game-board"></div>
+
+    <div id="status"></div>
+    <button id="restart-btn">Restart Game</button>
+    <script src="script.js"></script>
+</body>
+</html>

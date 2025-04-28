@@ -1,0 +1,150 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#status {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 15px 0;
+    color: #444;
+    height: 30px;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease;
+}
+
+.cell:hover {
+    background-color: #f0f0f0;
+}
+
+.cell.x {
+    color: #2196F3;
+}
+
+.cell.o {
+    color: #F44336;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #388E3C;
+}
+
+.player-info {
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.player {
+    text-align: center;
+    padding: 10px;
+    border-radius: 4px;
+    width: 140px;
+}
+
+.player.active {
+    background-color: #e3f2fd;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.game-setup {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 400px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mode-selection {
+    margin-bottom: 20px;
+}
+
+.mode-selection select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.player-setup {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.player-input {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.player-input label {
+    font-weight: bold;
+}
+
+.player-input input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#start-game {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#start-game:hover {
+    background-color: #45a049;
+}
